@@ -71,7 +71,7 @@ export function CaseStudies() {
             </h3>
             <p className="mb-6 font-body-md text-body-md leading-relaxed font-light text-on-surface-variant">
               Facing plateaued check averages and strained sommelier operations
-              during two seatings, Aurelia &amp; Stone overhauled the cellar
+              during two seatings, Consulting Firm overhauled the cellar
               presentation ritual and synchronized front-of-house micro-cues.
             </p>
             <div className="mb-6 grid grid-cols-3 gap-4 border-y border-outline-variant/20 py-4">
@@ -80,7 +80,7 @@ export function CaseStudies() {
               <Metric value="100%" label="Sommelier Retention" />
             </div>
             <blockquote className="mb-4 font-headline-sm text-headline-sm font-normal text-primary italic">
-              “Aurelia &amp; Stone preserved the poetry of our dining room while
+              “Consulting Firm preserved the poetry of our dining room while
               instilling an almost surgical rhythm behind the scenes. Our profit
               margin expanded without a single guest detecting anything but
               greater grace.”

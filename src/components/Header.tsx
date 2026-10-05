@@ -4,10 +4,8 @@ import { container } from './layout'
 
 const links = [
   { href: '/#expertise', label: 'Expertise' },
-  { href: '/#sanctuaries', label: 'Sanctuaries' },
-  { href: '/#case-studies', label: 'Case Studies' },
-  { href: '/#methodology', label: 'Advisory' },
   { href: '/team', label: 'Team' },
+  { href: '/pricing', label: 'Pricing' },
   { href: '/contact', label: 'Audit' },
 ]
 
@@ -22,7 +20,7 @@ export function Header() {
           className="font-headline-md text-headline-md tracking-wider text-primary uppercase"
           to="/"
         >
-          Aurelia &amp; Stone
+          Consulting Firm
         </Link>
 
         <nav className="hidden items-center space-x-8 md:flex">
@@ -46,23 +44,7 @@ export function Header() {
           })}
         </nav>
 
-        <div className={`flex items-center ${onContact ? 'space-x-6' : 'space-x-5'}`}>
-          {onContact ? (
-            <a
-              className="hidden font-label-md text-label-md text-on-surface-variant transition-colors duration-200 hover:text-secondary lg:block"
-              href="#portal"
-            >
-              Client Portal
-            </a>
-          ) : (
-            <Link
-              className="hidden items-center space-x-2 font-label-md text-label-md text-on-surface-variant transition-colors duration-200 hover:text-secondary lg:flex"
-              to="/#audit"
-            >
-              <Icon name="calendar_today" className="text-[18px]" />
-              <span>Client Portal</span>
-            </Link>
-          )}
+        <div className="flex items-center">
           {onContact ? (
             <a
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-label-md text-label-md tracking-wider text-surface uppercase shadow-sm transition-colors duration-300 hover:bg-secondary"

@@ -60,7 +60,7 @@ const faqs = [
   },
   {
     title: 'Retainer & Diagnostic Fee Structures',
-    body: 'Diagnostics are billed as fixed single-engagement mandates ranging from $18,000 for single boutique properties to tiered collective fees for multi-resort estates. If ownership elects to retain Aurelia & Stone for subsequent 6-month operational implementation or menu rebuilds, the initial audit fee is credited directly toward the advisory retainer.',
+    body: 'Diagnostics are billed as fixed single-engagement mandates ranging from $18,000 for single boutique properties to tiered collective fees for multi-resort estates. If ownership elects to retain Consulting Firm for subsequent 6-month operational implementation or menu rebuilds, the initial audit fee is credited directly toward the advisory retainer.',
   },
 ]
 
@@ -114,7 +114,7 @@ export function Contact() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   useEffect(() => {
-    document.title = 'Aurelia & Stone — Contact & Operational Audit Request'
+    document.title = 'Consulting Firm — Contact & Operational Audit Request'
   }, [])
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -360,7 +360,7 @@ export function Contact() {
                   Direct Practice Inquiries
                 </h3>
                 <div className="space-y-4">
-                  <a className="group flex items-center gap-4" href="mailto:advisory@aureliastone.com">
+                  <a className="group flex items-center gap-4" href="mailto:advisory@consultingfirm.com">
                     <span className="flex h-10 w-10 items-center justify-center rounded bg-surface-container text-primary transition-colors group-hover:bg-primary group-hover:text-surface">
                       <Icon name="lock" className="text-[20px]" />
                     </span>
@@ -369,7 +369,7 @@ export function Contact() {
                         Encrypted Executive Desk
                       </span>
                       <span className="font-title-md text-title-md text-primary transition-colors group-hover:text-secondary">
-                        advisory@aureliastone.com
+                        advisory@consultingfirm.com
                       </span>
                     </span>
                   </a>
@@ -494,11 +494,11 @@ export function Contact() {
         >
           <div className="flex flex-col items-center gap-6 text-center md:flex-row md:text-left">
             <span className="font-headline-md text-headline-md tracking-wider text-surface uppercase">
-              Aurelia &amp; Stone
+              Consulting Firm
             </span>
             <span className="hidden h-6 w-px bg-outline-variant/30 md:inline-block" />
             <p className="font-body-sm text-body-sm font-light text-surface-variant">
-              © 2024 Aurelia &amp; Stone Hospitality &amp; Wellness Advisory. All
+              © 2024 Consulting Firm Hospitality &amp; Wellness Advisory. All
               rights reserved.
             </p>
           </div>

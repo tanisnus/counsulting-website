@@ -9,7 +9,7 @@ import { Pillars } from '../components/Pillars'
 
 export function Home() {
   useEffect(() => {
-    document.title = 'AURELIA & STONE — Hospitality & Wellness Advisory'
+    document.title = 'Consulting Firm — Hospitality & Wellness Advisory'
   }, [])
 
   return (

@@ -81,7 +81,7 @@ function PartnerCard({
 
 export function Team() {
   useEffect(() => {
-    document.title = 'Aurelia & Stone — The Team'
+    document.title = 'Consulting Firm — The Team'
   }, [])
 
   return (

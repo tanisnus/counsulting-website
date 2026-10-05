@@ -32,7 +32,7 @@ export function Footer() {
               className="mb-4 inline-block font-headline-md text-headline-md tracking-wider text-surface uppercase"
               href="#top"
             >
-              Aurelia &amp; Stone
+              Consulting Firm
             </a>
             <p className="mb-6 max-w-sm font-body-sm text-body-sm font-light text-surface-variant">
               Bespoke management advisory and sensory architectural design for
@@ -98,7 +98,7 @@ export function Footer() {
 
         <div className="flex flex-col items-center justify-between gap-space-lg pt-8 text-surface-variant md:flex-row">
           <p className="font-body-sm text-body-sm">
-            © 2024 Aurelia &amp; Stone Hospitality &amp; Wellness Advisory. All
+            © 2024 Consulting Firm Hospitality &amp; Wellness Advisory. All
             rights reserved.
           </p>
           <div className="flex items-center space-x-6 font-body-sm text-body-sm">
