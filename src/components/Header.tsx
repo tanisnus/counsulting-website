@@ -7,6 +7,7 @@ const links = [
   { href: '/#sanctuaries', label: 'Sanctuaries' },
   { href: '/#case-studies', label: 'Case Studies' },
   { href: '/#methodology', label: 'Advisory' },
+  { href: '/team', label: 'Team' },
   { href: '/contact', label: 'Audit' },
 ]
 
@@ -26,9 +27,9 @@ export function Header() {
 
         <nav className="hidden items-center space-x-8 md:flex">
           {links.map((link) => {
-            const current = onContact
-              ? link.href === '/contact'
-              : link.href === '/#expertise'
+            const current =
+              link.href === pathname ||
+              (pathname === '/' && link.href === '/#expertise')
             return (
               <Link
                 key={link.href}
