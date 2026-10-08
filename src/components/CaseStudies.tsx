@@ -1,11 +1,7 @@
+import massageSpaImage from '../assets/massage-spa-image.jpg'
+import restaurantImage from '../assets/restaurant-image.jpg'
 import { Icon } from './Icon'
 import { container } from './layout'
-
-const diningImage =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBFl7A4gm0OBPG-tuXtSzi2uvtrDI5hl2bCfOsHGF8gbGE5gvXPE7GwOsLAdr0lfItBpMElcSfOZbDm5mAP6vXXplTS-ptrY6s8lB-pW8Byt4SaMYJ5f_yxBd69bXqaO3tSgfexW6NOpTOvAcP976GULrQp9TdGO1yAfQ6AjWHcCzUmp0udXduzmXZjBQlGYDfKPQ7etJUgboPxydsmZJcZynQfgY-_f9cV0MmqPv_KtD-DHMIYv3wsHA'
-
-const onsenImage =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuB1dcTAdFgdLUDeCPy_n1iJ33CewOH7wsrBhvwtZguH59hUZ4fl0BBIHn4Iktyd8J3uI_0gpWCuw8PppX9dJyKitTF8BbFkLwHFuGDvavbaeDUUNrv1YEgP8B5P1tm49ywCmPp_kINseH6jcd0FF2JRkpU1pD08jaaLxlXOA3_Jn61AT2H20xJap4JbJwcmQATNw1apBloIMMTltVOQgC3i5Kb57_0CYLhS_x3c1DfbBvCWYgb1FB62eQ'
 
 function Metric({ value, label }: { value: string; label: string }) {
   return (
@@ -51,8 +47,8 @@ export function CaseStudies() {
             <div className="relative h-[360px] overflow-hidden rounded-lg">
               <img
                 className="h-full w-full object-cover"
-                alt="Intimate Paris dining room with walnut tables, ivory linen, and candlelit stemware."
-                src={diningImage}
+                alt="Restaurant dining room with dark wood floors, black chairs, and set tables."
+                src={restaurantImage}
               />
               <div className="absolute top-4 left-4 rounded bg-primary px-3 py-1 font-label-sm text-label-sm text-surface">
                 2 Michelin Star Property
@@ -129,8 +125,8 @@ export function CaseStudies() {
             <div className="relative h-[360px] overflow-hidden rounded-lg">
               <img
                 className="h-full w-full object-cover"
-                alt="Japanese onsen with cedar framing, river stones, and mist over mineral pools."
-                src={onsenImage}
+                alt="Spa treatment room with massage tables, wood slat walls, and rust-colored lounge chairs."
+                src={massageSpaImage}
               />
               <div className="absolute top-4 right-4 rounded bg-primary px-3 py-1 font-label-sm text-label-sm text-surface">
                 Forbes 5-Star Nominee

@@ -1,8 +1,5 @@
-import { Icon } from './Icon'
+import salonImage from '../assets/salon-image.jpg'
 import { container } from './layout'
-
-const heroImage =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuDmTxaS4AeubuRTfZI0_Mr76viyacXsQ4GrFwCJcKOfgWadLOYSzEFm8hJx9ETgdO7grncgPDzxedD_K_tsVb3aGiPCdPWqU2f2oY8RdM3AtRGVjDOLYKT3QXCDpr-7nMgRhqFtFhZ8iUlnV_365swmFwL6wo1N7lwEA8m91ozDWaO4i5lhyDXZlyVrqQ-mVxEAHe5NVniPy1Mz3aEGM5x2Fjov2mCou0O_qT6fKOiz45lhYYiapNda1w'
 
 const cities = ['NYC', 'PAR', 'TYO']
 
@@ -77,8 +74,8 @@ export function Hero() {
               <div className="relative h-[480px] w-full overflow-hidden rounded-lg">
                 <img
                   className="h-full w-full object-cover"
-                  alt="Minimalist luxury thermal sanctuary with limestone reflecting pools, timber louvers, and warm mineral water."
-                  src={heroImage}
+                  alt="Hair salon with black styling chairs, round mirrors, and product shelves."
+                  src={salonImage}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
                 <div className="absolute right-6 bottom-6 left-6 text-surface">
@@ -93,19 +90,6 @@ export function Hero() {
                   </p>
                 </div>
               </div>
-            </div>
-
-            <div className="absolute -bottom-6 -left-6 z-20 hidden max-w-xs rounded-lg border border-outline-variant/40 bg-surface-container-lowest p-5 shadow-[0_12px_32px_-8px_rgba(43,51,56,0.12)] sm:block">
-              <div className="mb-2 flex items-center space-x-3">
-                <Icon name="auto_awesome" className="text-[22px] text-secondary" />
-                <span className="font-label-md text-label-md text-primary uppercase">
-                  Precision Yield
-                </span>
-              </div>
-              <p className="font-body-sm text-body-sm text-on-surface-variant">
-                Synchronizing sensory ambiance with seat turnover pacing and
-                retail basket conversion.
-              </p>
             </div>
           </div>
         </div>
