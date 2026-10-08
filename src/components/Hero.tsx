@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import salonImage from '../assets/salon-image.jpg'
 import { container } from './layout'
 
@@ -31,12 +32,12 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col items-stretch space-y-4 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-4">
-              <a
+              <Link
                 className="inline-flex items-center justify-center rounded-lg bg-primary-container px-8 py-4 text-center font-label-lg text-label-lg text-surface shadow-sm transition-all duration-300 hover:bg-secondary"
-                href="#audit"
+                to="/contact"
               >
                 Schedule an Advisory Audit
-              </a>
+              </Link>
               <a
                 className="inline-flex items-center justify-center rounded-lg border border-primary bg-transparent px-8 py-4 text-center font-label-lg text-label-lg text-primary transition-all duration-300 hover:bg-surface-container"
                 href="#case-studies"
