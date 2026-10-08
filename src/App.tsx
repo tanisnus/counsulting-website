@@ -1,21 +1,20 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { ScrollManager } from './components/ScrollManager'
+import { Contact } from './pages/Contact'
+import { Home } from './pages/Home'
+import { Pricing } from './pages/Pricing'
+import { Team } from './pages/Team'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div className="flex min-h-screen items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-500">
-          Hello Tailwind!
-          </h1>
-      </div>
-    </>
+    <BrowserRouter>
+      <ScrollManager />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/pricing" element={<Pricing />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
-
-export default App
